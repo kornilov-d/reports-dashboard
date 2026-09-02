@@ -20,8 +20,9 @@ npm run dev
   in view mode too, so casual tweaks don't need edit mode.
 - **Edit dashboard mode** — drag handles, dashed empty-cell placeholders, an
   "+ Add widget" tile in the next open slot, and "Reset to default".
-- **Top-level filters** — period presets plus a custom start/end range, and an
-  "All shows"/single-show selector. Both re-fetch every widget in place.
+- **Top-level filters** — one date field that opens a range picker (preset rail,
+  one or two month grids, Cancel/Apply), plus an "All shows"/single-show
+  selector. Both re-fetch every widget in place.
 - **Per-widget states** — skeleton while loading, "No data for this period",
   and an inline retry that never blocks neighbouring widgets.
 - **Auto-save with undo** — every structural change persists immediately and

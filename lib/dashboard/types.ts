@@ -50,9 +50,10 @@ export type DashboardWidget = {
 
 export type PeriodPreset =
   | "today"
+  | "thisWeek"
+  | "thisMonth"
   | "last7"
   | "last30"
-  | "thisMonth"
   | "custom";
 
 export type Filters = {

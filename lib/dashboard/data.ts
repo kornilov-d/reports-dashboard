@@ -81,6 +81,15 @@ export function resolvePeriod(filters: Filters, now = new Date()): Period {
   switch (filters.preset) {
     case "today":
       return { from: today, to: now, days: 1, label: "Today" };
+    case "thisWeek": {
+      const from = addDays(today, -((now.getDay() + 6) % 7)); // week starts Monday
+      return {
+        from,
+        to: now,
+        days: ((now.getDay() + 6) % 7) + 1,
+        label: "This week",
+      };
+    }
     case "last7":
       return {
         from: addDays(today, -6),
