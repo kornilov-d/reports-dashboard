@@ -292,3 +292,40 @@ export function IconTicket2(p: IconProps) {
     </svg>
   );
 }
+export function Refresh(p: IconProps) {
+  return (
+    <svg {...base(p)}>
+      <path d="M20 11a8 8 0 1 0-.6 4" />
+      <path d="M20 5v6h-6" />
+    </svg>
+  );
+}
+export function Copy(p: IconProps) {
+  return (
+    <svg {...base(p)}>
+      <rect x="9" y="9" width="12" height="12" rx="2" />
+      <path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1" />
+    </svg>
+  );
+}
+export function Undo(p: IconProps) {
+  return (
+    <svg {...base(p)}>
+      <path d="M4 9h11a5 5 0 0 1 0 10h-6" />
+      <path d="M8 5 4 9l4 4" />
+    </svg>
+  );
+}
+export function Grid(p: IconProps) {
+  return (
+    <svg {...base(p)}>
+      <rect x="3" y="3" width="8" height="8" rx="1.5" />
+      <rect x="13" y="3" width="8" height="8" rx="1.5" />
+      <rect x="3" y="13" width="8" height="8" rx="1.5" />
+      <rect x="13" y="13" width="8" height="8" rx="1.5" />
+    </svg>
+  );
+}
+export function Check(p: IconProps) {
+  return <svg {...base(p)}><path d="M4 12.5l5 5L20 6.5" /></svg>;
+}
